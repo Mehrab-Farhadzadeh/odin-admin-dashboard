@@ -90,6 +90,9 @@ header {
    box-shadow: var(--card-box-shadow);
    background-color: var(--header-bgc);
    position: relative;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   align-items: center;
 }
 
 .sidebar {
@@ -100,6 +103,14 @@ header {
    display: grid;
    grid-template-rows: min-content;
    gap: 1rem;
+
+   .brand {
+      font-weight: bold;
+   }
+
+   nav ul {
+      margin-bottom: 2rem;
+   }
 }
 
 .article {
