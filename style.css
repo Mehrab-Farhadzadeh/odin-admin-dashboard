@@ -12,6 +12,7 @@
 
 * {
    margin: 0;
+   padding: 0;
 }
 
 img,
@@ -27,6 +28,10 @@ ol[role="list"],
 ul[role="list"] {
    list-style: none;
    padding-inline: 0;
+}
+
+ul {
+   list-style-type: none;
 }
 
 input,
@@ -89,8 +94,12 @@ header {
 
 .sidebar {
    background-color: var(--sidebar-bgc);
-   padding: 2em 4em;
+   padding: 1em 1em;
    grid-row: 1 / 3;
+   color: var(--header-bgc);
+   display: grid;
+   grid-template-rows: min-content;
+   gap: 1rem;
 }
 
 .article {
