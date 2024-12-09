@@ -89,7 +89,7 @@ a {
 body {
    display: grid;
    grid-template-columns: 1fr 4fr;
-   grid-template-rows: 150px 1fr;
+   grid-template-rows: 180px 1fr;
    min-height: 100vh;
    font-family: sans-serif;
 }
@@ -100,12 +100,11 @@ header {
    position: relative;
    display: grid;
    grid-template-columns: 2fr 1fr;
-   align-items: center;
-   padding: 1em;
-   row-gap: 1.5em;
+   gap: 1em;
+   padding: 1em 2em;
 
    .search {
-      border: 1px solid;
+      align-content: center;
       input {
          background-color: var(--article-bgc);
          border: none;
@@ -132,8 +131,8 @@ header {
 
       img.profile-pic {
          border-radius: 50%;
-         width: 50px;
-         height: 50px;
+         width: 40px;
+         height: 40px;
          background-color: var(--pale-color);
       }
 
@@ -147,6 +146,7 @@ header {
       display: flex;
       gap: 1rem;
       align-items: center;
+      padding-left: 1em;
 
       img.profile-pic {
          border-radius: 50%;
@@ -170,7 +170,7 @@ header {
 
    .buttons {
       display: flex;
-      gap: 1rem;
+      gap: 1.5rem;
       align-items: center;
 
       button {
@@ -187,16 +187,16 @@ header {
 
 .sidebar {
    background-color: var(--sidebar-bgc);
-   padding: 1em 1em;
+   padding: 1em 2em;
    grid-row: 1 / 3;
    color: var(--header-bgc);
    display: grid;
    grid-template-rows: min-content;
-   gap: 1rem;
+   gap: 2rem;
 
    .brand {
       font-weight: bold;
-      font-size: 1.8rem;
+      font-size: 1.7rem;
 
       .logo {
          margin-right: 8px;
@@ -204,17 +204,18 @@ header {
    }
 
    nav ul {
-      margin-bottom: 2rem;
+      margin-bottom: 3em;
+      font-size: 1.2rem;
 
       li {
-         margin: .7em 0;
+         margin: 1em 0;
 
          font-weight: bold;
 
          i {
             background: var(--header-bgc);
             padding: 1px 10px;
-            margin-right: 8px;
+            margin-right: 16px;
             border: 1px solid;
          }
       }
