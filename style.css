@@ -70,6 +70,11 @@ h6 {
 /*********************************/
 /*********************************/
 
+@font-face {
+   font-family: Roboto;
+   src: url(fonts/Roboto/Roboto-Medium.ttf);
+}
+
 :root {
    --header-bgc: #ffffff;
    --sidebar-bgc: #0d9488;
@@ -91,7 +96,7 @@ body {
    grid-template-columns: 1fr 4fr;
    grid-template-rows: 160px 1fr;
    min-height: 100vh;
-   font-family: sans-serif;
+   font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -194,6 +199,7 @@ header {
    display: grid;
    grid-template-rows: min-content;
    gap: 2rem;
+   letter-spacing: 1px;
 
    .brand {
       font-weight: bold;
