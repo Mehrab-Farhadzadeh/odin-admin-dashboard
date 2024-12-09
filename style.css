@@ -72,12 +72,12 @@ h6 {
 
 :root {
    --header-bgc: #ffffff;
-   --sidebar-bgc: #334155;
-   --article-bgc: #e2e8f0;
+   --sidebar-bgc: #0d9488;
+   --article-bgc: #f4f4f5;
    --card-box-shadow: 1px 1px 8px #00000033;
-   --main-text-color: #000000;
-   --sub-text-color: #515151;
-   --secondary-theme-color: #030712;
+   --main-text-color: #363636;
+   --sub-text-color: #858585;
+   --secondary-theme-color: #4ade80;
    --pale-color: #c5c5c5;
 }
 
@@ -89,7 +89,7 @@ a {
 body {
    display: grid;
    grid-template-columns: 1fr 4fr;
-   grid-template-rows: 180px 1fr;
+   grid-template-rows: 160px 1fr;
    min-height: 100vh;
    font-family: sans-serif;
 }
@@ -101,10 +101,11 @@ header {
    display: grid;
    grid-template-columns: 2fr 1fr;
    gap: 1em;
-   padding: 1em 2em;
+   padding: .5em 2em 1em;
 
    .search {
       align-content: center;
+
       input {
          background-color: var(--article-bgc);
          border: none;
