@@ -8,3 +8,7 @@
 
 - JavaScript
 - Accessibility
+
+## To do
+
+- Style sidebar items to have outward border radius
