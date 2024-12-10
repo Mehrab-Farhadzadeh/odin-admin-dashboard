@@ -226,6 +226,14 @@ header {
          padding: 8px 24px;
          cursor: pointer;
       }
+
+      button:hover {
+         background-color: #14b8a6;
+      }
+
+      button:active {
+         box-shadow: inset 1px -1px 4px #0f766e;
+      }
    }
 
 }
@@ -257,9 +265,12 @@ header {
 
       &:hover {
          color: var(--main-text-color);
+         text-shadow: white 1px 0 30px;
 
          svg {
             fill: var(--main-text-color);
+            -webkit-filter: drop-shadow(1px 0px 20px rgba(255, 255, 255, 0.7));
+            filter: drop-shadow(1px 0px 20px rgba(255, 255, 255, 0.7));
          }
       }
    }
@@ -308,6 +319,7 @@ header {
    padding-left: 1em;
    display: grid;
    grid-template-columns: 2.5fr 1fr;
+   grid-template-rows: auto;
    grid-auto-rows: 1fr;
    gap: 2rem;
 
